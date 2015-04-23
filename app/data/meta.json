@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "master": {
+      "title": "Mobizine :: Master",
+      "description": "Awesome project.",
+      "keywords": "html5, css3, Mobizine"
+    },
+    "index": {
+      "title": "Mobizine :: Home",
+      "description": "Awesome project.",
+      "keywords": "html5, css3, Mobizine"
+    }
+  }
+}
