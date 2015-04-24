@@ -7,4 +7,105 @@ body {
   width: 100%;
   min-height: 480px;
   background-size: cover !important;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.page-category {
+	margin-top: 12px;
+	padding: 8px 14px;
+	background-color: #111;
+	color: #ffffff;
+	.box-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+	display: inline-block;
+}
+
+.cover-text {
+	background-color: rgba(0, 0, 0, 0.85);
+	border: 1px solid rgba(0, 0, 0, 0.9);
+	border-radius: 4px;
+	padding: 12px;
+	margin-left: 12px;
+	margin-right: 12px;
+	position: absolute;
+	bottom: 12px;
+	color: #ffffff;
+
+	> h2 {
+		margin-top: 4px;
+	}
+
+	.cover-subtext {
+		color: #ccc;
+	}
+}
+
+.content-body {
+	line-height: 24px;
+	padding-left: 12px;
+	padding-right: 12px;
+
+	h2 {
+		margin: 18px auto 10px;
+		color: #555;
+	}
+
+	> .subheading {
+		font-family: @heading-font-family;
+		font-style: italic;
+		line-height: 18px;
+		color: #777;
+		font-weight: bold;
+		display: inline-block;
+	}
+
+	> p {
+		margin-top: 16px;
+
+		> span:first-child {
+			float: left;
+			margin: 14px 6px 6px 0;
+			font-size: 50px;
+			font-family: @heading-font-family;
+			color: #555;
+		}
+	}
+}
+
+.content-img {
+	display: block;
+	border: 1px solid #ccc;
+	.box-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+	padding: 4px;
+	background-color: inherit;
+
+	> img {
+		width: 100%;
+	}
+
+	& > &-caption {
+		padding: 4px 6px 0;
+		display: inline-block;
+		font-style: italic;
+		color: #666;
+	}
+}
+
+.toc {
+
+	> .content-cover {
+		text-align: center;
+
+		> .cover-text {
+		bottom: inherit;
+		display: inline-block;
+		position: relative;
+		margin-top: 12px;
+			
+			> h2 {
+				margin-bottom: 0;
+			}
+		}
+
+	}
 }
