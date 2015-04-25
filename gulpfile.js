@@ -37,7 +37,8 @@ opts.src = {
       'app/scripts/app.js'
     ]
   },
-  fonts: 'app/fonts/**/*.*',
+  fonts: ['app/fonts/**/*.*',  'bower_components/bootstrap/fonts/**/*.*'],
+  sounds: 'app/sounds/**/*.*',
   images: ['app/images/**/*.*', '!app/images/sprite/*.*'],
   sprite: 'app/images/sprite/*.png',
   clean: ['dist', '.tmp'],
@@ -63,6 +64,7 @@ opts.dest = {
   styles: '.tmp/styles',
   scripts: '.tmp/scripts',
   fonts: '.tmp/fonts',
+  sounds: '.tmp/sounds',
   spriteCss: 'app/styles/helpers',
   spriteImg: 'app/images',
   images: '.tmp/images',
@@ -233,8 +235,8 @@ gulp.task('scripts', function () {
     .pipe($.if(process.env.NODE_ENV === 'DISTRIBUTION', gulp.dest(opts.dest.scripts)));
 
   var app = gulp.src(opts.src.scripts.app)
-    .pipe($.if(process.env.NODE_ENV === 'DISTRIBUTION', $.concat(opts.concat.app)))
-    .pipe($.if(process.env.NODE_ENV === 'DISTRIBUTION', $.uglify(opts.uglify)))
+    // .pipe($.if(process.env.NODE_ENV === 'DISTRIBUTION', $.concat(opts.concat.app)))
+    // .pipe($.if(process.env.NODE_ENV === 'DISTRIBUTION', $.uglify(opts.uglify)))
     .pipe($.if(process.env.NODE_ENV === 'DISTRIBUTION', gulp.dest(opts.dest.scripts)));
 
   return $.merge(dev, head, app);
@@ -249,6 +251,11 @@ gulp.task('fonts', function () {
   return gulp.src(opts.src.fonts)
     .pipe($.newer(opts.dest.fonts))
     .pipe(gulp.dest(opts.dest.fonts));
+});
+gulp.task('sounds', function () {
+  return gulp.src(opts.src.sounds)
+    .pipe($.newer(opts.dest.sounds))
+    .pipe(gulp.dest(opts.dest.sounds));
 });
 
 gulp.task('sprite', function () {
@@ -293,12 +300,12 @@ gulp.task('copy', function () {
  */
 
 gulp.task('default', ['clean'], function (cb) {
-  $.run(['data', 'sprite', 'scripts'], ['views', 'styles', 'images', 'fonts'], cb);
+  $.run(['data', 'sprite', 'scripts'], ['views', 'styles', 'images', 'fonts', 'sounds'], cb);
 });
 
 gulp.task('dist', ['clean'], function (cb) {
   process.env.NODE_ENV = 'DISTRIBUTION';
-  $.run(['data', 'sprite', 'scripts'], ['views', 'styles', 'images', 'fonts'], 'copy', cb);
+  $.run(['data', 'sprite', 'scripts'], ['views', 'styles', 'images', 'fonts', 'sounds'], 'copy', cb);
 });
 
 gulp.task('serve', ['default'], function () {
