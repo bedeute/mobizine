@@ -1,5 +1,43 @@
+.dark-theme {
+
+  > .header {
+
+    > .navbar {
+      #gradient > .vertical(#000, transparent, 0%);
+    }
+
+    .btn-back {
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      background-color: rgba(0, 0, 0, 0.35);
+
+      > .glyphicon {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.35);
+    .box-shadow(0 1px 2px rgba(0, 0, 0, 0.25));
+
+    > .icon-bar {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .navbar-brand {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+
 nav.navbar {
 	margin-bottom: 0;
+  .transition(all 0.2s ease-in-out);
+  border-top: none;
+  z-index: 21;
+  #gradient > .vertical(#fff, transparent, 0%);
 }
 
 .header {
@@ -11,6 +49,7 @@ nav.navbar {
     float: left;
     display: inline-block;
     border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.75);
     color: #777;
 
     &:hover {
@@ -18,5 +57,24 @@ nav.navbar {
       background-color: #ddd;
       text-decoration: none;
     }
+  }
+}
+
+.navbar-brand {
+  color: #555;
+}
+
+.navbar-toggle {
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.75);
+
+  > .icon-bar{
+    background-color: #777;
+  }
+
+  &:hover {
+    color: #666;
+    background-color: #ddd;
+    text-decoration: none;
   }
 }

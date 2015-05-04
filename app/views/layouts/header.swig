@@ -1,5 +1,5 @@
 <header class="header">
-  <nav class="navbar navbar-default" role="navigation">
+  <nav class="navbar" role="navigation">
     <div class="navbar-header">
       <a href="content.html" class="btn-back"><span class="glyphicon glyphicon-arrow-left"></span></a>
       <button type="button" class="navbar-toggle">

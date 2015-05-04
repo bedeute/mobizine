@@ -1,4 +1,4 @@
-{% extends "master.swig" %}
+{% extends "layouts/master.swig" %}
 
 {% block head %}
   {% parent %}

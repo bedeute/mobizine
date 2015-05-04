@@ -1,4 +1,4 @@
-{% extends "layouts/master-dark.swig" %}
+{% extends "layouts/master.swig" %}
 
 {% block head %}
   {% parent %}
@@ -8,8 +8,8 @@
 {% endblock %}
 
 {% block main %}
-<div class="content content-sky">
-  <div class="content-cover" style="background: transparent url(images/cover-dummy.jpg) top center no-repeat">
+<div class="content content-volcano">
+  <div class="content-cover" style="background: transparent url(images/cover-dummy-2.jpg) top center no-repeat">
     <div class="page-category">Page<span>Category</span></div>
   	<div class="page-rubric">Page Rubric</div>
 		<div class="cover-text">
