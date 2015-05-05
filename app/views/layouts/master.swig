@@ -37,41 +37,8 @@
 </head>
 
 <body>
-  <div class="mini-toc hide">
-    <div class="mini-toc-inner">
-      <div class="col-xs-4">
-        <a href="cover.html" class="mini-toc-item">
-          <img src="http://placeimg.com/100/120/any">
-          <div class="mini-toc-item-text">
-            Cover
-          </div>
-        </a>
-      </div>
-      <div class="col-xs-4">
-        <a href="index.html" class="mini-toc-item">
-          <img src="http://placeimg.com/100/120/architect">
-          <div class="mini-toc-item-text">
-            #1 Chapter number one
-          </div>
-        </a>
-      </div>
-      <div class="col-xs-4">
-        <a href="index.html" class="mini-toc-item">
-          <img src="http://placeimg.com/100/120/art">
-          <div class="mini-toc-item-text">
-            #2 Chapter number two
-          </div>
-        </a>
-      </div>
-      <div class="col-xs-4">
-        <a href="index.html" class="mini-toc-item">
-          <img src="http://placeimg.com/100/120/cat">
-          <div class="mini-toc-item-text">
-            #3 Chapter number three
-          </div>
-        </a>
-      </div>
-    </div>
+  <div class="slidebar slidebar-light shrink">
+    {% include "slidebar.swig" %}
   </div>
   <div class="wrap">
     {% include "header.swig" %}

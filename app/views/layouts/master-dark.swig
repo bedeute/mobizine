@@ -37,7 +37,9 @@
 </head>
 
 <body>
-  {% include "slidebar.swig" %}
+  <div class="slidebar shrink">
+    {% include "slidebar.swig" %}
+  </div>
   <div class="wrap dark-theme">
     {% include "header.swig" %}
 

@@ -9,23 +9,23 @@
 
 {% block main %}
 <div class="content content-volcano">
-  <div class="content-cover" style="background: transparent url(images/cover-dummy-2.jpg) top center no-repeat">
-    <div class="page-category">Page<span>Category</span></div>
-  	<div class="page-rubric">Page Rubric</div>
+  <div class="content-cover" style="background: transparent url(images/mary-jane-kebaya.jpg) top center no-repeat">
+    <div class="page-category">Majalah<span>Tempo</span></div>
+  	<div class="page-rubric">Politik</div>
 		<div class="cover-text">
-			<h2>Fry and the <span>Slurm Factory</span></h2>
-			<span class="cover-subtext">Enough about your promiscuous mother, Hermes!</span>
+			<h2>Jejak Narkotik Tetangga <span>Di Esguerra</span></h2>
+			{# <span class="cover-subtext">Enough about your promiscuous mother, Hermes!</span> #}
 		</div>
   </div>
   <div class="content-body">
-  	<h2>Termsheet business model canvas strategy infographic</h2>
+  	{# <h2>Termsheet business model canvas strategy infographic</h2>
   	<span class="subheading">Business-to-consumer investor MVP return on investment market.</span>
     <ul class="content-info list-inline">
       <li><strong>Text1:</strong> text1</li>
       <li><strong>Text2:</strong> text2</li>
       <li><strong>Long Text 3:</strong> Long text 3</li>
       <li><strong>Text4:</strong> text4</li>
-    </ul>
+    </ul> #}
   	<p>
   		<span>E</span>ntrepreneur accelerator low hanging fruit handshake churn rate market facebook. Crowdsource virality marketing freemium pitch facebook buyer startup iPad twitter innovator www.discoverartisans.com business-to-consumer. IPhone virality iteration lean startup investor conversion bandwidth angel investor. Termsheet business model canvas strategy infographic burn rate product management release incubator business-to-business facebook growth hacking success business-to-consumer.
     </p>

@@ -1,4 +1,4 @@
-{% extends "layouts/master-dark.swig" %}
+{% extends "layouts/master.swig" %}
 
 {% block head %}
   {% parent %}
@@ -8,18 +8,18 @@
 {% endblock %}
 
 {% block main %}
-<div class="content content-sky">
-  <div class="content-cover" style="background: transparent url(images/Persona-5-artwork.jpg) top center no-repeat">
-    <div class="page-category">Touch<span>on</span></div>
-  	<div class="page-rubric">UPCOMING GAMES</div>
+<div class="content content-volcano">
+  <div class="content-cover" style="background: transparent url(images/cover-dummy-2.jpg) top center no-repeat">
+    <div class="page-category">Page<span>Category</span></div>
+  	<div class="page-rubric">Page Rubric</div>
 		<div class="cover-text">
-			<h2><span>Persona 5</span></h2>
+			<h2> Infographic testing technology <span>network effects</span></h2>
 			<span class="cover-subtext">Juvenile, Picaresque, and Demons</span>
 		</div>
   </div>
   <div class="content-body">
-  	{# <h2>Termsheet business model canvas strategy infographic</h2>
-  	<span class="subheading">Business-to-consumer investor MVP return on investment market.</span> #}
+  	<h2>Termsheet business model canvas strategy infographic</h2>
+  	<span class="subheading">Business-to-consumer investor MVP return on investment market.</span>
     <ul class="content-info list-inline">
       <li><strong>Dev:</strong> Atlus</li>
       <li><strong>Genre:</strong> Role Playing Games</li>
